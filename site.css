@@ -1,29 +1,39 @@
 
+body{
+  font-family: 'Indie Flower', cursive;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 .click-box{
-    width: 100%;
         min-height: 200px;
         cursor: pointer;
         text-align: center;
     display: table;
+    background-color: grey;
+    width: 100%;
 }
 .click-box, .click-box-text::selection{
     background-color: transparent;
 }
+.click-box-list-container{
+    padding: 25px;
+    width: 25%;
+}
+.click-box-list-container li{
+    min-width: 100px;
+    min-height: 20px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+.click-box-container{
+    width: 65%;    
+}
+
 .click-box-text {
   display: table-cell;
   vertical-align: middle;
-  font-family: 'Indie Flower', cursive;
   font-size: 80px;
-}
-#box-1{
-    background-color: rgb(179, 210, 52);
-    width: 50%;
-}
-#box-2{
-    background-color: #F79420;
-    width: 50%;
 }
