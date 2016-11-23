@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link href="site.css" rel="stylesheet" type="text/css"/>
+    <link href="site.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="site.js" type="text/javascript" defer ></script>
+    <script src="site.js" type="text/javascript" defer></script>
 </head>
+
 <body>
     <div class="container">
         <div class="click-box-list-container">
@@ -15,11 +17,29 @@
         </div>
         <div class="click-box-container">
             <span id="cbn">select a color</span>
-        <div id="cb" class="click-box">
-            <span id="cbt" class="click-box-text">0</span>
+            <div id="cb" class="click-box">
+                <span id="cbt" class="click-box-text">0</span>
+            </div>
+            <div class="admin">
+                <button type="button" id="show-admin">Admin</button>
+                <div class="div-admin-form">
+                    <form id="admin-form" class="hide">
+                        <label for="form_color_picker">name</label>
+                        <input type="color" id="form_color_picker" value="#ff0000" />
+                        </br>
+                        <label for="form_color_clicks">clicks</label>
+                        <input id="form_color_clicks" />
+                        
+                        </br>
+                        <button type="submit"
+                        >Save</button>
+                    </form>
+
+                </div>
+
+            </div>
+
         </div>
-        </div>
-        
-    </div>
 </body>
+
 </html>
